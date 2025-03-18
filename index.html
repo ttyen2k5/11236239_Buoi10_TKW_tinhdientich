@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Diện Tích và Chu Vi</title>
+    <link rel="stylesheet" href="haizz.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tính Diện Tích và Chu Vi</h2>
+        <form id="shapeForm">
+            <div class="shape-selection">
+                <label>
+                    <input type="radio" name="shape" value="rectangle" checked onclick="updateInputs()"> Hình Chữ Nhật
+                </label>
+                <label>
+                    <input type="radio" name="shape" value="circle" onclick="updateInputs()"> Hình Tròn
+                </label>
+                <label>
+                    <input type="radio" name="shape" value="triangle" onclick="updateInputs()"> Hình Tam Giác
+                </label>
+            </div>
+            
+            <div id="inputs" class="input-container"></div>
+            <button type="button" onclick="calculate()">Tính toán</button>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    <script src="haizz.js"></script>
+</body>
+</html>
